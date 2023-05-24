@@ -7,6 +7,7 @@
 //
 
 #import "RYViewController.h"
+#import <YYKit.h>
 
 @interface RYViewController ()
 
