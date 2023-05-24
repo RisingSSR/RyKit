@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '10.0'
+
+target 'RyKit_Example' do
+  pod 'RyKit', :path => '../'
+
+  target 'RyKit_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
