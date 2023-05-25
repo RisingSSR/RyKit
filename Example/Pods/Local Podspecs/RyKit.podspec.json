@@ -164,19 +164,191 @@
     },
     {
       "name": "UIKitEX",
-      "source_files": [
-        "RyKit/Classes/Base/UIKit/**/*",
-        "RyKit/Classes/Base/Quartz/**/*"
-      ],
-      "public_header_files": [
-        "RyKit/Classes/Base/UIKit/**/*.h",
-        "RyKit/Classes/Base/Quartz/**/*.h"
-      ],
-      "dependencies": {
-        "RyKit/FoundationEX": [
+      "subspecs": [
+        {
+          "name": "Quartz",
+          "source_files": "RyKit/Classes/Base/Quartz/**/*",
+          "public_header_files": "RyKit/Classes/Base/Quartz/**/*.h",
+          "dependencies": {
+            "RyKit/Macro/YYKitMacro": [
 
-        ]
-      }
+            ],
+            "RyKit/UIKitEX/UIViewEX": [
+
+            ]
+          }
+        },
+        {
+          "name": "UIApplicationEX",
+          "source_files": "RyKit/Classes/Base/UIKit/UIApplication+YYAdd.{h, m}",
+          "public_header_files": "RyKit/Classes/Base/UIKit/UIApplication+YYAdd.h",
+          "dependencies": {
+            "RyKit/Macro/YYKitMacro": [
+
+            ],
+            "RyKit/FoundationEX/NSArrayEX": [
+
+            ],
+            "RyKit/FoundationEX/NSObjectEX": [
+
+            ],
+            "RyKit/UIKitEX/UIDeviceEX": [
+
+            ]
+          }
+        },
+        {
+          "name": "UIBarButtonItemEX",
+          "source_files": "RyKit/Classes/Base/UIKit/UIBarButtonItem+YYAdd.{h, m}",
+          "public_header_files": "RyKit/Classes/Base/UIKit/UIBarButtonItem+YYAdd.h",
+          "dependencies": {
+            "RyKit/Macro/YYKitMacro": [
+
+            ]
+          }
+        },
+        {
+          "name": "UIBezierPathEX",
+          "source_files": "RyKit/Classes/Base/UIKit/UIBezierPath+YYAdd.{h, m}",
+          "public_header_files": "RyKit/Classes/Base/UIKit/UIBezierPath+YYAdd.h",
+          "dependencies": {
+            "RyKit/Macro/YYKitMacro": [
+
+            ],
+            "RyKit/UIKitEX/UIFontEX": [
+
+            ]
+          }
+        },
+        {
+          "name": "UIColorEX",
+          "source_files": "RyKit/Classes/Base/UIKit/UIColor+YYAdd.{h, m}",
+          "public_header_files": "RyKit/Classes/Base/UIKit/UIColor+YYAdd.h",
+          "dependencies": {
+            "RyKit/Macro/YYKitMacro": [
+
+            ],
+            "RyKit/FoundationEX/NSStringEX": [
+
+            ]
+          }
+        },
+        {
+          "name": "UIControlEX",
+          "source_files": "RyKit/Classes/Base/UIKit/UIControl+YYAdd.{h, m}",
+          "public_header_files": "RyKit/Classes/Base/UIKit/UIControl+YYAdd.h",
+          "dependencies": {
+            "RyKit/Macro/YYKitMacro": [
+
+            ]
+          }
+        },
+        {
+          "name": "UIDeviceEX",
+          "source_files": "RyKit/Classes/Base/UIKit/UIDevice+YYAdd.{h, m}",
+          "public_header_files": "RyKit/Classes/Base/UIKit/UIDevice+YYAdd.h",
+          "dependencies": {
+            "RyKit/Macro/YYKitMacro": [
+
+            ],
+            "RyKit/FoundationEX/NSStringEX": [
+
+            ]
+          }
+        },
+        {
+          "name": "UIFontEX",
+          "source_files": "RyKit/Classes/Base/UIKit/UIFont+YYAdd.{h, m}",
+          "public_header_files": "RyKit/Classes/Base/UIKit/UIFont+YYAdd.h",
+          "dependencies": {
+            "RyKit/Macro/YYKitMacro": [
+
+            ]
+          }
+        },
+        {
+          "name": "UIGestureRecognizerEX",
+          "source_files": "RyKit/Classes/Base/UIKit/UIGestureRecognizer+YYAdd.{h, m}",
+          "public_header_files": "RyKit/Classes/Base/UIKit/UIGestureRecognizer+YYAdd.h",
+          "dependencies": {
+            "RyKit/Macro/YYKitMacro": [
+
+            ]
+          }
+        },
+        {
+          "name": "UIImageEX",
+          "source_files": "RyKit/Classes/Base/UIKit/UIImage+YYAdd.{h, m}",
+          "public_header_files": "RyKit/Classes/Base/UIKit/UIImage+YYAdd.h",
+          "dependencies": {
+            "RyKit/Macro/YYKitMacro": [
+
+            ],
+            "RyKit/FoundationEX/NSStringEX": [
+
+            ],
+            "RyKit/UIKitEX/Quartz": [
+
+            ],
+            "RyKit/UIKitEX/UIDeviceEX": [
+
+            ]
+          }
+        },
+        {
+          "name": "UIScreenEX",
+          "source_files": "RyKit/Classes/Base/UIKit/UIScreen+YYAdd.{h, m}",
+          "public_header_files": "RyKit/Classes/Base/UIKit/UIScreen+YYAdd.h",
+          "dependencies": {
+            "RyKit/Macro/YYKitMacro": [
+
+            ],
+            "RyKit/UIKitEX/UIDeviceEX": [
+
+            ]
+          }
+        },
+        {
+          "name": "UIScrollViewEX",
+          "source_files": "RyKit/Classes/Base/UIKit/UIScrollView+YYAdd.{h, m}",
+          "public_header_files": "RyKit/Classes/Base/UIKit/UIScrollView+YYAdd.h",
+          "dependencies": {
+            "RyKit/Macro/YYKitMacro": [
+
+            ]
+          }
+        },
+        {
+          "name": "UITableViewEX",
+          "source_files": "RyKit/Classes/Base/UIKit/UITableView+YYAdd.{h, m}",
+          "public_header_files": "RyKit/Classes/Base/UIKit/UITableView+YYAdd.h",
+          "dependencies": {
+            "RyKit/Macro/YYKitMacro": [
+
+            ]
+          }
+        },
+        {
+          "name": "UITextFieldEX",
+          "source_files": "RyKit/Classes/Base/UIKit/UITextField+YYAdd.{h, m}",
+          "public_header_files": "RyKit/Classes/Base/UIKit/UITextField+YYAdd.h",
+          "dependencies": {
+            "RyKit/Macro/YYKitMacro": [
+
+            ]
+          }
+        },
+        {
+          "name": "UIViewEX",
+          "source_files": "RyKit/Classes/Base/UIKit/UIView+YYAdd.{h, m}",
+          "public_header_files": "RyKit/Classes/Base/UIKit/UIView+YYAdd.h",
+          "dependencies": {
+            "RyKit/Macro/YYKitMacro": [
+
+            ]
+          }
+        }
+      ]
     },
     {
       "name": "Cache",
