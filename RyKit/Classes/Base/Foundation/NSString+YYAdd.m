@@ -11,7 +11,7 @@
 
 #import "NSString+YYAdd.h"
 #import "NSData+YYAdd.h"
-//#import "NSNumber+YYAdd.h"
+#import "NSNumber+YYAdd.h"
 #import "YYKitMacro.h"
 
 YYSYNTH_DUMMY_CLASS(NSString_YYAdd)
