@@ -1,5 +1,25 @@
 PODS:
-  - RyKit (0.1.0)
+  - RyKit (0.1.1):
+    - RyKit/Cache (= 0.1.1)
+    - RyKit/FoundationEX (= 0.1.1)
+    - RyKit/Macro (= 0.1.1)
+    - RyKit/Model (= 0.1.1)
+    - RyKit/UIKitEX (= 0.1.1)
+    - RyKit/Utility (= 0.1.1)
+  - RyKit/Cache (0.1.1):
+    - RyKit/FoundationEX
+  - RyKit/FoundationEX (0.1.1):
+    - RyKit/Macro
+  - RyKit/Macro (0.1.1):
+    - RyKit/Macro/RisingSingleClass (= 0.1.1)
+    - RyKit/Macro/YYKitMacro (= 0.1.1)
+  - RyKit/Macro/RisingSingleClass (0.1.1)
+  - RyKit/Macro/YYKitMacro (0.1.1)
+  - RyKit/Model (0.1.1)
+  - RyKit/UIKitEX (0.1.1):
+    - RyKit/FoundationEX
+  - RyKit/Utility (0.1.1):
+    - RyKit/Macro
 
 DEPENDENCIES:
   - RyKit (from `../`)
@@ -9,7 +29,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  RyKit: 903780435008c023e8df70ee87dbda0d3097a502
+  RyKit: 11ccb7bddf5099a7744e1d9ea843512a844fec53
 
 PODFILE CHECKSUM: dbf74daa73431e4bf7b24ba3d11bb5f975f8501d
 

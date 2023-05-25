@@ -12,7 +12,6 @@
 #import "YYDiskCache.h"
 #import "YYKVStorage.h"
 #import "NSString+YYAdd.h"
-#import "UIDevice+YYAdd.h"
 #import <objc/runtime.h>
 #import <time.h>
 

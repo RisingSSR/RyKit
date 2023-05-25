@@ -10,7 +10,6 @@
 //
 
 #import "YYKeychain.h"
-#import "UIDevice+YYAdd.h"
 #import "YYKitMacro.h"
 #import <Security/Security.h>
 
@@ -167,22 +166,12 @@ static YYKeychainQuerySynchronizationMode YYKeychainQuerySynchonizationEnum(NSNu
     if (self.account) dic[(__bridge id)kSecAttrAccount] = self.account;
     if (self.service) dic[(__bridge id)kSecAttrService] = self.service;
     
-    if (![UIDevice currentDevice].isSimulator) {
-        // Remove the access group if running on the iPhone simulator.
-        //
-        // Apps that are built for the simulator aren't signed, so there's no keychain access group
-        // for the simulator to check. This means that all apps can see all keychain items when run
-        // on the simulator.
-        //
-        // If a SecItem contains an access group attribute, SecItemAdd and SecItemUpdate on the
-        // simulator will return -25243 (errSecNoAccessForItem).
-        //
-        // The access group attribute will be included in items returned by SecItemCopyMatching,
-        // which is why we need to remove it before updating the item.
-        if (self.accessGroup) dic[(__bridge id)kSecAttrAccessGroup] = self.accessGroup;
-    }
+#if TARGET_OS_SIMULATOR
+#else
+    if (self.accessGroup) dic[(__bridge id)kSecAttrAccessGroup] = self.accessGroup;
+#endif
     
-    if (kiOS7Later) {
+    if ([UIDevice currentDevice].systemVersion.doubleValue >= 7) {
         dic[(__bridge id)kSecAttrSynchronizable] = YYKeychainQuerySynchonizationID(self.synchronizable);
     }
     
@@ -198,22 +187,12 @@ static YYKeychainQuerySynchronizationMode YYKeychainQuerySynchonizationEnum(NSNu
     if (self.service) dic[(__bridge id)kSecAttrService] = self.service;
     if (self.label) dic[(__bridge id)kSecAttrLabel] = self.label;
     
-    if (![UIDevice currentDevice].isSimulator) {
-        // Remove the access group if running on the iPhone simulator.
-        //
-        // Apps that are built for the simulator aren't signed, so there's no keychain access group
-        // for the simulator to check. This means that all apps can see all keychain items when run
-        // on the simulator.
-        //
-        // If a SecItem contains an access group attribute, SecItemAdd and SecItemUpdate on the
-        // simulator will return -25243 (errSecNoAccessForItem).
-        //
-        // The access group attribute will be included in items returned by SecItemCopyMatching,
-        // which is why we need to remove it before updating the item.
-        if (self.accessGroup) dic[(__bridge id)kSecAttrAccessGroup] = self.accessGroup;
-    }
+#if TARGET_OS_SIMULATOR
+#else
+    if (self.accessGroup) dic[(__bridge id)kSecAttrAccessGroup] = self.accessGroup;
+#endif
     
-    if (kiOS7Later) {
+    if ([UIDevice currentDevice].systemVersion.doubleValue >= 7) {
         dic[(__bridge id)kSecAttrSynchronizable] = YYKeychainQuerySynchonizationID(self.synchronizable);
     }
     

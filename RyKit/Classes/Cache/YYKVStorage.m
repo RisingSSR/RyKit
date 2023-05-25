@@ -10,7 +10,7 @@
 //
 
 #import "YYKVStorage.h"
-#import "UIApplication+YYAdd.h"
+//#import "UIApplication+YYAdd.h"
 #import <UIKit/UIKit.h>
 #import <time.h>
 
@@ -711,10 +711,10 @@ static NSString *const kTrashDirectoryName = @"trash";
 }
 
 - (void)dealloc {
-    UIBackgroundTaskIdentifier taskID = [[UIApplication sharedExtensionApplication] beginBackgroundTaskWithExpirationHandler:^{}];
+    UIBackgroundTaskIdentifier taskID = [[UIApplication sharedApplication] beginBackgroundTaskWithExpirationHandler:^{}];
     [self _dbClose];
     if (taskID != UIBackgroundTaskInvalid) {
-        [[UIApplication sharedExtensionApplication] endBackgroundTask:taskID];
+        [[UIApplication sharedApplication] endBackgroundTask:taskID];
     }
 }
 

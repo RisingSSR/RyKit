@@ -1,8 +1,7 @@
 {
   "name": "RyKit",
-  "version": "0.1.0",
-  "summary": "A short description of RyKit.",
-  "description": "TODO: Add long description of the pod here.",
+  "version": "0.1.1",
+  "summary": "RyKit (魔改YYKit)",
   "homepage": "https://github.com/RisingSSR/RyKit",
   "license": {
     "type": "MIT",
@@ -13,10 +12,79 @@
   },
   "source": {
     "git": "https://github.com/RisingSSR/RyKit.git",
-    "tag": "0.1.0"
+    "tag": "0.1.1"
   },
   "platforms": {
     "ios": "11.0"
   },
-  "source_files": "RyKit/Classes/**/*"
+  "source_files": "RyKit/Classes/YYKit.h",
+  "public_header_files": "RyKit/Classes/YYKit.h",
+  "subspecs": [
+    {
+      "name": "Macro",
+      "subspecs": [
+        {
+          "name": "YYKitMacro",
+          "source_files": "RyKit/Classes/Base/Macro/YYKitMacro.h",
+          "public_header_files": "yKit/Classes/Base/Macro/YYKitMacro.h"
+        },
+        {
+          "name": "RisingSingleClass",
+          "source_files": "RyKit/Classes/Base/Macro/RisingSingleClass.h",
+          "public_header_files": "yKit/Classes/Base/Macro/RisingSingleClass.h"
+        }
+      ]
+    },
+    {
+      "name": "Model",
+      "source_files": "RyKit/Classes/Model/**/*",
+      "public_header_files": "RyKit/Classes/Model/**/*.h"
+    },
+    {
+      "name": "FoundationEX",
+      "source_files": "RyKit/Classes/Base/Foundation/**/*",
+      "public_header_files": "RyKit/Classes/Base/Foundation/**/*.h",
+      "dependencies": {
+        "RyKit/Macro": [
+
+        ]
+      }
+    },
+    {
+      "name": "UIKitEX",
+      "source_files": [
+        "RyKit/Classes/Base/UIKit/**/*",
+        "RyKit/Classes/Base/Quartz/**/*"
+      ],
+      "public_header_files": [
+        "RyKit/Classes/Base/UIKit/**/*.h",
+        "RyKit/Classes/Base/Quartz/**/*.h"
+      ],
+      "dependencies": {
+        "RyKit/FoundationEX": [
+
+        ]
+      }
+    },
+    {
+      "name": "Cache",
+      "source_files": "RyKit/Classes/Cache/**/*",
+      "public_header_files": "RyKit/Classes/Cache/**/*.h",
+      "dependencies": {
+        "RyKit/FoundationEX": [
+
+        ]
+      }
+    },
+    {
+      "name": "Utility",
+      "source_files": "RyKit/Classes/Utility/**/*",
+      "public_header_files": "RyKit/Classes/Utility/**/*.h",
+      "dependencies": {
+        "RyKit/Macro": [
+
+        ]
+      }
+    }
+  ]
 }
