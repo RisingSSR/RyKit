@@ -9,7 +9,42 @@ PODS:
   - RyKit/Cache (0.1.1):
     - RyKit/FoundationEX
   - RyKit/FoundationEX (0.1.1):
-    - RyKit/Macro
+    - RyKit/FoundationEX/NSArrayEX (= 0.1.1)
+    - RyKit/FoundationEX/NSBundleEX (= 0.1.1)
+    - RyKit/FoundationEX/NSDataEX (= 0.1.1)
+    - RyKit/FoundationEX/NSDateEX (= 0.1.1)
+    - RyKit/FoundationEX/NSDictionaryEX (= 0.1.1)
+    - RyKit/FoundationEX/NSKeyedUnarchiverEX (= 0.1.1)
+    - RyKit/FoundationEX/NSNumberEX (= 0.1.1)
+    - RyKit/FoundationEX/NSObjectEX (= 0.1.1)
+    - RyKit/FoundationEX/NSStringEX (= 0.1.1)
+    - RyKit/FoundationEX/NSThreadEX (= 0.1.1)
+    - RyKit/FoundationEX/NSTimerEX (= 0.1.1)
+  - RyKit/FoundationEX/NSArrayEX (0.1.1):
+    - RyKit/FoundationEX/NSDataEX
+    - RyKit/Macro/YYKitMacro
+  - RyKit/FoundationEX/NSBundleEX (0.1.1):
+    - RyKit/FoundationEX/NSStringEX
+    - RyKit/Macro/YYKitMacro
+  - RyKit/FoundationEX/NSDataEX (0.1.1):
+    - RyKit/Macro/YYKitMacro
+  - RyKit/FoundationEX/NSDateEX (0.1.1):
+    - RyKit/Macro/YYKitMacro
+  - RyKit/FoundationEX/NSDictionaryEX (0.1.1):
+    - RyKit/FoundationEX/NSDataEX
+    - RyKit/FoundationEX/NSStringEX
+    - RyKit/Macro/YYKitMacro
+  - RyKit/FoundationEX/NSKeyedUnarchiverEX (0.1.1):
+    - RyKit/Macro/YYKitMacro
+  - RyKit/FoundationEX/NSNumberEX (0.1.1):
+    - RyKit/Macro/YYKitMacro
+  - RyKit/FoundationEX/NSObjectEX (0.1.1):
+    - RyKit/Macro/YYKitMacro
+  - RyKit/FoundationEX/NSStringEX (0.1.1):
+    - RyKit/Macro/YYKitMacro
+  - RyKit/FoundationEX/NSThreadEX (0.1.1)
+  - RyKit/FoundationEX/NSTimerEX (0.1.1):
+    - RyKit/Macro/YYKitMacro
   - RyKit/Macro (0.1.1):
     - RyKit/Macro/RisingSingleClass (= 0.1.1)
     - RyKit/Macro/YYKitMacro (= 0.1.1)
@@ -29,7 +64,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  RyKit: 11ccb7bddf5099a7744e1d9ea843512a844fec53
+  RyKit: 45dac58e58d375118dbca423d0a436b5195f93cb
 
 PODFILE CHECKSUM: dbf74daa73431e4bf7b24ba3d11bb5f975f8501d
 

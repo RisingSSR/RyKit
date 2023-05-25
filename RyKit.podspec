@@ -12,7 +12,6 @@ Pod::Spec.new do |s|
   s.summary          = 'RyKit (魔改YYKit)'
 
   s.homepage         = 'https://github.com/RisingSSR/RyKit'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'RisingSSR' => '2769119954@qq.com' }
   s.source           = { :git => 'https://github.com/RisingSSR/RyKit.git', :tag => s.version.to_s }
@@ -39,9 +38,74 @@ Pod::Spec.new do |s|
   end
   
   s.subspec 'FoundationEX' do |ss|
-      ss.source_files = 'RyKit/Classes/Base/Foundation/**/*'
-      ss.public_header_files = 'RyKit/Classes/Base/Foundation/**/*.h'
-      ss.dependency 'RyKit/Macro'
+      ss.subspec 'NSArrayEX' do |sss|
+          sss.source_files = 'RyKit/Classes/Base/Foundation/NSArray+YYAdd.{h, m}'
+          sss.public_header_files = 'RyKit/Classes/Base/Foundation/NSArray+YYAdd.h'
+          sss.dependency 'RyKit/Macro/YYKitMacro'
+          sss.dependency 'RyKit/FoundationEX/NSDataEX'
+      end
+      
+      ss.subspec 'NSBundleEX' do |sss|
+          sss.source_files = 'RyKit/Classes/Base/Foundation/NSBundle+YYAdd.{h, m}'
+          sss.public_header_files = 'RyKit/Classes/Base/Foundation/NSBundle+YYAdd.h'
+          sss.dependency 'RyKit/Macro/YYKitMacro'
+          sss.dependency 'RyKit/FoundationEX/NSStringEX'
+      end
+      
+      ss.subspec 'NSDataEX' do |sss|
+          sss.source_files = 'RyKit/Classes/Base/Foundation/NSData+YYAdd.{h, m}'
+          sss.public_header_files = 'RyKit/Classes/Base/Foundation/NSData+YYAdd.h'
+          sss.dependency 'RyKit/Macro/YYKitMacro'
+      end
+      
+      ss.subspec 'NSDateEX' do |sss|
+          sss.source_files = 'RyKit/Classes/Base/Foundation/NSDate+YYAdd.{h, m}'
+          sss.public_header_files = 'RyKit/Classes/Base/Foundation/NSDate+YYAdd.h'
+          sss.dependency 'RyKit/Macro/YYKitMacro'
+      end
+      
+      ss.subspec 'NSDictionaryEX' do |sss|
+          sss.source_files = 'RyKit/Classes/Base/Foundation/NSDictionary+YYAdd.{h, m}'
+          sss.public_header_files = 'RyKit/Classes/Base/Foundation/NSDictionary+YYAdd.h'
+          sss.dependency 'RyKit/Macro/YYKitMacro'
+          sss.dependency 'RyKit/FoundationEX/NSStringEX'
+          sss.dependency 'RyKit/FoundationEX/NSDataEX'
+      end
+      
+      ss.subspec 'NSKeyedUnarchiverEX' do |sss|
+          sss.source_files = 'RyKit/Classes/Base/Foundation/NSKeyedUnarchiver+YYAdd.{h, m}'
+          sss.public_header_files = 'RyKit/Classes/Base/Foundation/NSKeyedUnarchiver+YYAdd.h'
+          sss.dependency 'RyKit/Macro/YYKitMacro'
+      end
+      
+      ss.subspec 'NSNumberEX' do |sss|
+          sss.source_files = 'RyKit/Classes/Base/Foundation/NSNumber+YYAdd.{h, m}'
+          sss.public_header_files = 'RyKit/Classes/Base/Foundation/NSNumber+YYAdd.h'
+          sss.dependency 'RyKit/Macro/YYKitMacro'
+      end
+      
+      ss.subspec 'NSObjectEX' do |sss|
+          sss.source_files = 'RyKit/Classes/Base/Foundation/NSObject+*.{h, m}'
+          sss.public_header_files = 'RyKit/Classes/Base/Foundation/NSObject+?.h'
+          sss.dependency 'RyKit/Macro/YYKitMacro'
+      end
+      
+      ss.subspec 'NSStringEX' do |sss|
+          sss.source_files = 'RyKit/Classes/Base/Foundation/NSString+YYAdd.{h, m}'
+          sss.public_header_files = 'RyKit/Classes/Base/Foundation/NSString+YYAdd.h'
+          sss.dependency 'RyKit/Macro/YYKitMacro'
+      end
+      
+      ss.subspec 'NSThreadEX' do |sss|
+          sss.source_files = 'RyKit/Classes/Base/Foundation/NSThread+YYAdd.{h, m}'
+          sss.public_header_files = 'RyKit/Classes/Base/Foundation/NSThread+YYAdd.h'
+      end
+      
+      ss.subspec 'NSTimerEX' do |sss|
+          sss.source_files = 'RyKit/Classes/Base/Foundation/NSTimer+YYAdd.{h, m}'
+          sss.public_header_files = 'RyKit/Classes/Base/Foundation/NSTimer+YYAdd.h'
+          sss.dependency 'RyKit/Macro/YYKitMacro'
+      end
   end
   
   s.subspec 'UIKitEX' do |ss|

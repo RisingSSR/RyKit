@@ -42,13 +42,125 @@
     },
     {
       "name": "FoundationEX",
-      "source_files": "RyKit/Classes/Base/Foundation/**/*",
-      "public_header_files": "RyKit/Classes/Base/Foundation/**/*.h",
-      "dependencies": {
-        "RyKit/Macro": [
+      "subspecs": [
+        {
+          "name": "NSArrayEX",
+          "source_files": "RyKit/Classes/Base/Foundation/NSArray+YYAdd.{h, m}",
+          "public_header_files": "RyKit/Classes/Base/Foundation/NSArray+YYAdd.h",
+          "dependencies": {
+            "RyKit/Macro/YYKitMacro": [
 
-        ]
-      }
+            ],
+            "RyKit/FoundationEX/NSDataEX": [
+
+            ]
+          }
+        },
+        {
+          "name": "NSBundleEX",
+          "source_files": "RyKit/Classes/Base/Foundation/NSBundle+YYAdd.{h, m}",
+          "public_header_files": "RyKit/Classes/Base/Foundation/NSBundle+YYAdd.h",
+          "dependencies": {
+            "RyKit/Macro/YYKitMacro": [
+
+            ],
+            "RyKit/FoundationEX/NSStringEX": [
+
+            ]
+          }
+        },
+        {
+          "name": "NSDataEX",
+          "source_files": "RyKit/Classes/Base/Foundation/NSData+YYAdd.{h, m}",
+          "public_header_files": "RyKit/Classes/Base/Foundation/NSData+YYAdd.h",
+          "dependencies": {
+            "RyKit/Macro/YYKitMacro": [
+
+            ]
+          }
+        },
+        {
+          "name": "NSDateEX",
+          "source_files": "RyKit/Classes/Base/Foundation/NSDate+YYAdd.{h, m}",
+          "public_header_files": "RyKit/Classes/Base/Foundation/NSDate+YYAdd.h",
+          "dependencies": {
+            "RyKit/Macro/YYKitMacro": [
+
+            ]
+          }
+        },
+        {
+          "name": "NSDictionaryEX",
+          "source_files": "RyKit/Classes/Base/Foundation/NSDictionary+YYAdd.{h, m}",
+          "public_header_files": "RyKit/Classes/Base/Foundation/NSDictionary+YYAdd.h",
+          "dependencies": {
+            "RyKit/Macro/YYKitMacro": [
+
+            ],
+            "RyKit/FoundationEX/NSStringEX": [
+
+            ],
+            "RyKit/FoundationEX/NSDataEX": [
+
+            ]
+          }
+        },
+        {
+          "name": "NSKeyedUnarchiverEX",
+          "source_files": "RyKit/Classes/Base/Foundation/NSKeyedUnarchiver+YYAdd.{h, m}",
+          "public_header_files": "RyKit/Classes/Base/Foundation/NSKeyedUnarchiver+YYAdd.h",
+          "dependencies": {
+            "RyKit/Macro/YYKitMacro": [
+
+            ]
+          }
+        },
+        {
+          "name": "NSNumberEX",
+          "source_files": "RyKit/Classes/Base/Foundation/NSNumber+YYAdd.{h, m}",
+          "public_header_files": "RyKit/Classes/Base/Foundation/NSNumber+YYAdd.h",
+          "dependencies": {
+            "RyKit/Macro/YYKitMacro": [
+
+            ]
+          }
+        },
+        {
+          "name": "NSObjectEX",
+          "source_files": "RyKit/Classes/Base/Foundation/NSObject+*.{h, m}",
+          "public_header_files": "RyKit/Classes/Base/Foundation/NSObject+?.h",
+          "dependencies": {
+            "RyKit/Macro/YYKitMacro": [
+
+            ]
+          }
+        },
+        {
+          "name": "NSStringEX",
+          "source_files": "RyKit/Classes/Base/Foundation/NSString+YYAdd.{h, m}",
+          "public_header_files": "RyKit/Classes/Base/Foundation/NSString+YYAdd.h",
+          "dependencies": {
+            "RyKit/Macro/YYKitMacro": [
+
+            ]
+          }
+        },
+        {
+          "name": "NSThreadEX",
+          "source_files": "RyKit/Classes/Base/Foundation/NSThread+YYAdd.{h, m}",
+          "public_header_files": "RyKit/Classes/Base/Foundation/NSThread+YYAdd.h"
+        },
+        {
+          "name": "NSTimerEX",
+          "source_files": "RyKit/Classes/Base/Foundation/NSTimer+YYAdd.{h, m}",
+          "public_header_files": "RyKit/Classes/Base/Foundation/NSTimer+YYAdd.h",
+          "dependencies": {
+            "RyKit/Macro/YYKitMacro": [
+
+            ]
+          }
+        }
+      ]
     },
     {
       "name": "UIKitEX",
