@@ -7,7 +7,11 @@ PODS:
     - RyKit/UIKitEX (= 0.1.1)
     - RyKit/Utility (= 0.1.1)
   - RyKit/Cache (0.1.1):
-    - RyKit/FoundationEX
+    - RyKit/Cache/Disk (= 0.1.1)
+    - RyKit/Cache/Memory (= 0.1.1)
+  - RyKit/Cache/Disk (0.1.1):
+    - RyKit/UIKitEX/UIApplicationEX
+  - RyKit/Cache/Memory (0.1.1)
   - RyKit/FoundationEX (0.1.1):
     - RyKit/FoundationEX/NSArrayEX (= 0.1.1)
     - RyKit/FoundationEX/NSBundleEX (= 0.1.1)
@@ -119,7 +123,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  RyKit: b1030c17f5f163ac180d7da8024e128313594cea
+  RyKit: 497a7fa69d96c5416fd74f441971e3fb67d9300c
 
 PODFILE CHECKSUM: dbf74daa73431e4bf7b24ba3d11bb5f975f8501d
 

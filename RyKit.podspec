@@ -39,33 +39,33 @@ Pod::Spec.new do |s|
   
   s.subspec 'FoundationEX' do |ss|
       ss.subspec 'NSArrayEX' do |sss|
-          sss.source_files = 'RyKit/Classes/Base/Foundation/NSArray+YYAdd.{h, m}'
+          sss.source_files = 'RyKit/Classes/Base/Foundation/NSArray+YYAdd.{h,m}'
           sss.public_header_files = 'RyKit/Classes/Base/Foundation/NSArray+YYAdd.h'
           sss.dependency 'RyKit/Macro/YYKitMacro'
           sss.dependency 'RyKit/FoundationEX/NSDataEX'
       end
       
       ss.subspec 'NSBundleEX' do |sss|
-          sss.source_files = 'RyKit/Classes/Base/Foundation/NSBundle+YYAdd.{h, m}'
+          sss.source_files = 'RyKit/Classes/Base/Foundation/NSBundle+YYAdd.{h,m}'
           sss.public_header_files = 'RyKit/Classes/Base/Foundation/NSBundle+YYAdd.h'
           sss.dependency 'RyKit/Macro/YYKitMacro'
           sss.dependency 'RyKit/FoundationEX/NSStringEX'
       end
       
       ss.subspec 'NSDataEX' do |sss|
-          sss.source_files = 'RyKit/Classes/Base/Foundation/NSData+YYAdd.{h, m}'
+          sss.source_files = 'RyKit/Classes/Base/Foundation/NSData+YYAdd.{h,m}'
           sss.public_header_files = 'RyKit/Classes/Base/Foundation/NSData+YYAdd.h'
           sss.dependency 'RyKit/Macro/YYKitMacro'
       end
       
       ss.subspec 'NSDateEX' do |sss|
-          sss.source_files = 'RyKit/Classes/Base/Foundation/NSDate+YYAdd.{h, m}'
+          sss.source_files = 'RyKit/Classes/Base/Foundation/NSDate+YYAdd.{h,m}'
           sss.public_header_files = 'RyKit/Classes/Base/Foundation/NSDate+YYAdd.h'
           sss.dependency 'RyKit/Macro/YYKitMacro'
       end
       
       ss.subspec 'NSDictionaryEX' do |sss|
-          sss.source_files = 'RyKit/Classes/Base/Foundation/NSDictionary+YYAdd.{h, m}'
+          sss.source_files = 'RyKit/Classes/Base/Foundation/NSDictionary+YYAdd.{h,m}'
           sss.public_header_files = 'RyKit/Classes/Base/Foundation/NSDictionary+YYAdd.h'
           sss.dependency 'RyKit/Macro/YYKitMacro'
           sss.dependency 'RyKit/FoundationEX/NSStringEX'
@@ -73,36 +73,36 @@ Pod::Spec.new do |s|
       end
       
       ss.subspec 'NSKeyedUnarchiverEX' do |sss|
-          sss.source_files = 'RyKit/Classes/Base/Foundation/NSKeyedUnarchiver+YYAdd.{h, m}'
+          sss.source_files = 'RyKit/Classes/Base/Foundation/NSKeyedUnarchiver+YYAdd.{h,m}'
           sss.public_header_files = 'RyKit/Classes/Base/Foundation/NSKeyedUnarchiver+YYAdd.h'
           sss.dependency 'RyKit/Macro/YYKitMacro'
       end
       
       ss.subspec 'NSNumberEX' do |sss|
-          sss.source_files = 'RyKit/Classes/Base/Foundation/NSNumber+YYAdd.{h, m}'
+          sss.source_files = 'RyKit/Classes/Base/Foundation/NSNumber+YYAdd.{h,m}'
           sss.public_header_files = 'RyKit/Classes/Base/Foundation/NSNumber+YYAdd.h'
           sss.dependency 'RyKit/Macro/YYKitMacro'
       end
       
       ss.subspec 'NSObjectEX' do |sss|
-          sss.source_files = 'RyKit/Classes/Base/Foundation/NSObject+*.{h, m}'
+          sss.source_files = 'RyKit/Classes/Base/Foundation/NSObject+*.{h,m}'
           sss.public_header_files = 'RyKit/Classes/Base/Foundation/NSObject+?.h'
           sss.dependency 'RyKit/Macro/YYKitMacro'
       end
       
       ss.subspec 'NSStringEX' do |sss|
-          sss.source_files = 'RyKit/Classes/Base/Foundation/NSString+YYAdd.{h, m}'
+          sss.source_files = 'RyKit/Classes/Base/Foundation/NSString+YYAdd.{h,m}'
           sss.public_header_files = 'RyKit/Classes/Base/Foundation/NSString+YYAdd.h'
           sss.dependency 'RyKit/Macro/YYKitMacro'
       end
       
       ss.subspec 'NSThreadEX' do |sss|
-          sss.source_files = 'RyKit/Classes/Base/Foundation/NSThread+YYAdd.{h, m}'
+          sss.source_files = 'RyKit/Classes/Base/Foundation/NSThread+YYAdd.{h,m}'
           sss.public_header_files = 'RyKit/Classes/Base/Foundation/NSThread+YYAdd.h'
       end
       
       ss.subspec 'NSTimerEX' do |sss|
-          sss.source_files = 'RyKit/Classes/Base/Foundation/NSTimer+YYAdd.{h, m}'
+          sss.source_files = 'RyKit/Classes/Base/Foundation/NSTimer+YYAdd.{h,m}'
           sss.public_header_files = 'RyKit/Classes/Base/Foundation/NSTimer+YYAdd.h'
           sss.dependency 'RyKit/Macro/YYKitMacro'
       end
@@ -117,7 +117,7 @@ Pod::Spec.new do |s|
       end
       
       ss.subspec 'UIApplicationEX' do |sss|
-          sss.source_files = 'RyKit/Classes/Base/UIKit/UIApplication+YYAdd.{h, m}'
+          sss.source_files = 'RyKit/Classes/Base/UIKit/UIApplication+YYAdd.{h,m}'
           sss.public_header_files = 'RyKit/Classes/Base/UIKit/UIApplication+YYAdd.h'
           sss.dependency 'RyKit/Macro/YYKitMacro'
           sss.dependency 'RyKit/FoundationEX/NSArrayEX'
@@ -126,52 +126,52 @@ Pod::Spec.new do |s|
       end
       
       ss.subspec 'UIBarButtonItemEX' do |sss|
-          sss.source_files = 'RyKit/Classes/Base/UIKit/UIBarButtonItem+YYAdd.{h, m}'
+          sss.source_files = 'RyKit/Classes/Base/UIKit/UIBarButtonItem+YYAdd.{h,m}'
           sss.public_header_files = 'RyKit/Classes/Base/UIKit/UIBarButtonItem+YYAdd.h'
           sss.dependency 'RyKit/Macro/YYKitMacro'
       end
       
       ss.subspec 'UIBezierPathEX' do |sss|
-          sss.source_files = 'RyKit/Classes/Base/UIKit/UIBezierPath+YYAdd.{h, m}'
+          sss.source_files = 'RyKit/Classes/Base/UIKit/UIBezierPath+YYAdd.{h,m}'
           sss.public_header_files = 'RyKit/Classes/Base/UIKit/UIBezierPath+YYAdd.h'
           sss.dependency 'RyKit/Macro/YYKitMacro'
           sss.dependency 'RyKit/UIKitEX/UIFontEX'
       end
       
       ss.subspec 'UIColorEX' do |sss|
-          sss.source_files = 'RyKit/Classes/Base/UIKit/UIColor+YYAdd.{h, m}'
+          sss.source_files = 'RyKit/Classes/Base/UIKit/UIColor+YYAdd.{h,m}'
           sss.public_header_files = 'RyKit/Classes/Base/UIKit/UIColor+YYAdd.h'
           sss.dependency 'RyKit/Macro/YYKitMacro'
           sss.dependency 'RyKit/FoundationEX/NSStringEX'
       end
       
       ss.subspec 'UIControlEX' do |sss|
-          sss.source_files = 'RyKit/Classes/Base/UIKit/UIControl+YYAdd.{h, m}'
+          sss.source_files = 'RyKit/Classes/Base/UIKit/UIControl+YYAdd.{h,m}'
           sss.public_header_files = 'RyKit/Classes/Base/UIKit/UIControl+YYAdd.h'
           sss.dependency 'RyKit/Macro/YYKitMacro'
       end
       
       ss.subspec 'UIDeviceEX' do |sss|
-          sss.source_files = 'RyKit/Classes/Base/UIKit/UIDevice+YYAdd.{h, m}'
+          sss.source_files = 'RyKit/Classes/Base/UIKit/UIDevice+YYAdd.{h,m}'
           sss.public_header_files = 'RyKit/Classes/Base/UIKit/UIDevice+YYAdd.h'
           sss.dependency 'RyKit/Macro/YYKitMacro'
           sss.dependency 'RyKit/FoundationEX/NSStringEX'
       end
       
       ss.subspec 'UIFontEX' do |sss|
-          sss.source_files = 'RyKit/Classes/Base/UIKit/UIFont+YYAdd.{h, m}'
+          sss.source_files = 'RyKit/Classes/Base/UIKit/UIFont+YYAdd.{h,m}'
           sss.public_header_files = 'RyKit/Classes/Base/UIKit/UIFont+YYAdd.h'
           sss.dependency 'RyKit/Macro/YYKitMacro'
       end
       
       ss.subspec 'UIGestureRecognizerEX' do |sss|
-          sss.source_files = 'RyKit/Classes/Base/UIKit/UIGestureRecognizer+YYAdd.{h, m}'
+          sss.source_files = 'RyKit/Classes/Base/UIKit/UIGestureRecognizer+YYAdd.{h,m}'
           sss.public_header_files = 'RyKit/Classes/Base/UIKit/UIGestureRecognizer+YYAdd.h'
           sss.dependency 'RyKit/Macro/YYKitMacro'
       end
       
       ss.subspec 'UIImageEX' do |sss|
-          sss.source_files = 'RyKit/Classes/Base/UIKit/UIImage+YYAdd.{h, m}'
+          sss.source_files = 'RyKit/Classes/Base/UIKit/UIImage+YYAdd.{h,m}'
           sss.public_header_files = 'RyKit/Classes/Base/UIKit/UIImage+YYAdd.h'
           sss.dependency 'RyKit/Macro/YYKitMacro'
           sss.dependency 'RyKit/FoundationEX/NSStringEX'
@@ -180,41 +180,51 @@ Pod::Spec.new do |s|
       end
       
       ss.subspec 'UIScreenEX' do |sss|
-          sss.source_files = 'RyKit/Classes/Base/UIKit/UIScreen+YYAdd.{h, m}'
+          sss.source_files = 'RyKit/Classes/Base/UIKit/UIScreen+YYAdd.{h,m}'
           sss.public_header_files = 'RyKit/Classes/Base/UIKit/UIScreen+YYAdd.h'
           sss.dependency 'RyKit/Macro/YYKitMacro'
           sss.dependency 'RyKit/UIKitEX/UIDeviceEX'
       end
       
       ss.subspec 'UIScrollViewEX' do |sss|
-          sss.source_files = 'RyKit/Classes/Base/UIKit/UIScrollView+YYAdd.{h, m}'
+          sss.source_files = 'RyKit/Classes/Base/UIKit/UIScrollView+YYAdd.{h,m}'
           sss.public_header_files = 'RyKit/Classes/Base/UIKit/UIScrollView+YYAdd.h'
           sss.dependency 'RyKit/Macro/YYKitMacro'
       end
       
       ss.subspec 'UITableViewEX' do |sss|
-          sss.source_files = 'RyKit/Classes/Base/UIKit/UITableView+YYAdd.{h, m}'
+          sss.source_files = 'RyKit/Classes/Base/UIKit/UITableView+YYAdd.{h,m}'
           sss.public_header_files = 'RyKit/Classes/Base/UIKit/UITableView+YYAdd.h'
           sss.dependency 'RyKit/Macro/YYKitMacro'
       end
       
       ss.subspec 'UITextFieldEX' do |sss|
-          sss.source_files = 'RyKit/Classes/Base/UIKit/UITextField+YYAdd.{h, m}'
+          sss.source_files = 'RyKit/Classes/Base/UIKit/UITextField+YYAdd.{h,m}'
           sss.public_header_files = 'RyKit/Classes/Base/UIKit/UITextField+YYAdd.h'
           sss.dependency 'RyKit/Macro/YYKitMacro'
       end
       
       ss.subspec 'UIViewEX' do |sss|
-          sss.source_files = 'RyKit/Classes/Base/UIKit/UIView+YYAdd.{h, m}'
+          sss.source_files = 'RyKit/Classes/Base/UIKit/UIView+YYAdd.{h,m}'
           sss.public_header_files = 'RyKit/Classes/Base/UIKit/UIView+YYAdd.h'
           sss.dependency 'RyKit/Macro/YYKitMacro'
       end
   end
   
   s.subspec 'Cache' do |ss|
-      ss.source_files = 'RyKit/Classes/Cache/**/*'
-      ss.public_header_files = 'RyKit/Classes/Cache/**/*.h'
-      ss.dependency 'RyKit/FoundationEX'
+      ss.subspec 'Memory' do |sss|
+          sss.source_files = 'RyKit/Classes/Cache/YYMemoryCache.{h,m}'
+          sss.public_header_files = 'RyKit/Classes/Cache/YYMemoryCache.h'
+      end
+      
+      ss.subspec 'Disk' do |sss|
+          sss.source_files = 'RyKit/Classes/Cache/YYKVStorage.{h,m}', 'RyKit/Classes/Cache/YYDiskCache.{h,m}'
+          sss.public_header_files = 'RyKit/Classes/Cache/YYKVStorage.h', 'RyKit/Classes/Cache/YYDiskCache.h'
+          sss.dependency 'RyKit/UIKitEX/UIApplicationEX'
+      end
+      
+      ss.source_files = 'RyKit/Classes/Cache/YYCache.{h,m}'
+      ss.public_header_files = 'RyKit/Classes/Cache/YYCache.h'
   end
   
   s.subspec 'Utility' do |ss|

@@ -45,7 +45,7 @@
       "subspecs": [
         {
           "name": "NSArrayEX",
-          "source_files": "RyKit/Classes/Base/Foundation/NSArray+YYAdd.{h, m}",
+          "source_files": "RyKit/Classes/Base/Foundation/NSArray+YYAdd.{h,m}",
           "public_header_files": "RyKit/Classes/Base/Foundation/NSArray+YYAdd.h",
           "dependencies": {
             "RyKit/Macro/YYKitMacro": [
@@ -58,7 +58,7 @@
         },
         {
           "name": "NSBundleEX",
-          "source_files": "RyKit/Classes/Base/Foundation/NSBundle+YYAdd.{h, m}",
+          "source_files": "RyKit/Classes/Base/Foundation/NSBundle+YYAdd.{h,m}",
           "public_header_files": "RyKit/Classes/Base/Foundation/NSBundle+YYAdd.h",
           "dependencies": {
             "RyKit/Macro/YYKitMacro": [
@@ -71,7 +71,7 @@
         },
         {
           "name": "NSDataEX",
-          "source_files": "RyKit/Classes/Base/Foundation/NSData+YYAdd.{h, m}",
+          "source_files": "RyKit/Classes/Base/Foundation/NSData+YYAdd.{h,m}",
           "public_header_files": "RyKit/Classes/Base/Foundation/NSData+YYAdd.h",
           "dependencies": {
             "RyKit/Macro/YYKitMacro": [
@@ -81,7 +81,7 @@
         },
         {
           "name": "NSDateEX",
-          "source_files": "RyKit/Classes/Base/Foundation/NSDate+YYAdd.{h, m}",
+          "source_files": "RyKit/Classes/Base/Foundation/NSDate+YYAdd.{h,m}",
           "public_header_files": "RyKit/Classes/Base/Foundation/NSDate+YYAdd.h",
           "dependencies": {
             "RyKit/Macro/YYKitMacro": [
@@ -91,7 +91,7 @@
         },
         {
           "name": "NSDictionaryEX",
-          "source_files": "RyKit/Classes/Base/Foundation/NSDictionary+YYAdd.{h, m}",
+          "source_files": "RyKit/Classes/Base/Foundation/NSDictionary+YYAdd.{h,m}",
           "public_header_files": "RyKit/Classes/Base/Foundation/NSDictionary+YYAdd.h",
           "dependencies": {
             "RyKit/Macro/YYKitMacro": [
@@ -107,7 +107,7 @@
         },
         {
           "name": "NSKeyedUnarchiverEX",
-          "source_files": "RyKit/Classes/Base/Foundation/NSKeyedUnarchiver+YYAdd.{h, m}",
+          "source_files": "RyKit/Classes/Base/Foundation/NSKeyedUnarchiver+YYAdd.{h,m}",
           "public_header_files": "RyKit/Classes/Base/Foundation/NSKeyedUnarchiver+YYAdd.h",
           "dependencies": {
             "RyKit/Macro/YYKitMacro": [
@@ -117,7 +117,7 @@
         },
         {
           "name": "NSNumberEX",
-          "source_files": "RyKit/Classes/Base/Foundation/NSNumber+YYAdd.{h, m}",
+          "source_files": "RyKit/Classes/Base/Foundation/NSNumber+YYAdd.{h,m}",
           "public_header_files": "RyKit/Classes/Base/Foundation/NSNumber+YYAdd.h",
           "dependencies": {
             "RyKit/Macro/YYKitMacro": [
@@ -127,7 +127,7 @@
         },
         {
           "name": "NSObjectEX",
-          "source_files": "RyKit/Classes/Base/Foundation/NSObject+*.{h, m}",
+          "source_files": "RyKit/Classes/Base/Foundation/NSObject+*.{h,m}",
           "public_header_files": "RyKit/Classes/Base/Foundation/NSObject+?.h",
           "dependencies": {
             "RyKit/Macro/YYKitMacro": [
@@ -137,7 +137,7 @@
         },
         {
           "name": "NSStringEX",
-          "source_files": "RyKit/Classes/Base/Foundation/NSString+YYAdd.{h, m}",
+          "source_files": "RyKit/Classes/Base/Foundation/NSString+YYAdd.{h,m}",
           "public_header_files": "RyKit/Classes/Base/Foundation/NSString+YYAdd.h",
           "dependencies": {
             "RyKit/Macro/YYKitMacro": [
@@ -147,12 +147,12 @@
         },
         {
           "name": "NSThreadEX",
-          "source_files": "RyKit/Classes/Base/Foundation/NSThread+YYAdd.{h, m}",
+          "source_files": "RyKit/Classes/Base/Foundation/NSThread+YYAdd.{h,m}",
           "public_header_files": "RyKit/Classes/Base/Foundation/NSThread+YYAdd.h"
         },
         {
           "name": "NSTimerEX",
-          "source_files": "RyKit/Classes/Base/Foundation/NSTimer+YYAdd.{h, m}",
+          "source_files": "RyKit/Classes/Base/Foundation/NSTimer+YYAdd.{h,m}",
           "public_header_files": "RyKit/Classes/Base/Foundation/NSTimer+YYAdd.h",
           "dependencies": {
             "RyKit/Macro/YYKitMacro": [
@@ -180,7 +180,7 @@
         },
         {
           "name": "UIApplicationEX",
-          "source_files": "RyKit/Classes/Base/UIKit/UIApplication+YYAdd.{h, m}",
+          "source_files": "RyKit/Classes/Base/UIKit/UIApplication+YYAdd.{h,m}",
           "public_header_files": "RyKit/Classes/Base/UIKit/UIApplication+YYAdd.h",
           "dependencies": {
             "RyKit/Macro/YYKitMacro": [
@@ -199,7 +199,7 @@
         },
         {
           "name": "UIBarButtonItemEX",
-          "source_files": "RyKit/Classes/Base/UIKit/UIBarButtonItem+YYAdd.{h, m}",
+          "source_files": "RyKit/Classes/Base/UIKit/UIBarButtonItem+YYAdd.{h,m}",
           "public_header_files": "RyKit/Classes/Base/UIKit/UIBarButtonItem+YYAdd.h",
           "dependencies": {
             "RyKit/Macro/YYKitMacro": [
@@ -209,7 +209,7 @@
         },
         {
           "name": "UIBezierPathEX",
-          "source_files": "RyKit/Classes/Base/UIKit/UIBezierPath+YYAdd.{h, m}",
+          "source_files": "RyKit/Classes/Base/UIKit/UIBezierPath+YYAdd.{h,m}",
           "public_header_files": "RyKit/Classes/Base/UIKit/UIBezierPath+YYAdd.h",
           "dependencies": {
             "RyKit/Macro/YYKitMacro": [
@@ -222,7 +222,7 @@
         },
         {
           "name": "UIColorEX",
-          "source_files": "RyKit/Classes/Base/UIKit/UIColor+YYAdd.{h, m}",
+          "source_files": "RyKit/Classes/Base/UIKit/UIColor+YYAdd.{h,m}",
           "public_header_files": "RyKit/Classes/Base/UIKit/UIColor+YYAdd.h",
           "dependencies": {
             "RyKit/Macro/YYKitMacro": [
@@ -235,7 +235,7 @@
         },
         {
           "name": "UIControlEX",
-          "source_files": "RyKit/Classes/Base/UIKit/UIControl+YYAdd.{h, m}",
+          "source_files": "RyKit/Classes/Base/UIKit/UIControl+YYAdd.{h,m}",
           "public_header_files": "RyKit/Classes/Base/UIKit/UIControl+YYAdd.h",
           "dependencies": {
             "RyKit/Macro/YYKitMacro": [
@@ -245,7 +245,7 @@
         },
         {
           "name": "UIDeviceEX",
-          "source_files": "RyKit/Classes/Base/UIKit/UIDevice+YYAdd.{h, m}",
+          "source_files": "RyKit/Classes/Base/UIKit/UIDevice+YYAdd.{h,m}",
           "public_header_files": "RyKit/Classes/Base/UIKit/UIDevice+YYAdd.h",
           "dependencies": {
             "RyKit/Macro/YYKitMacro": [
@@ -258,7 +258,7 @@
         },
         {
           "name": "UIFontEX",
-          "source_files": "RyKit/Classes/Base/UIKit/UIFont+YYAdd.{h, m}",
+          "source_files": "RyKit/Classes/Base/UIKit/UIFont+YYAdd.{h,m}",
           "public_header_files": "RyKit/Classes/Base/UIKit/UIFont+YYAdd.h",
           "dependencies": {
             "RyKit/Macro/YYKitMacro": [
@@ -268,7 +268,7 @@
         },
         {
           "name": "UIGestureRecognizerEX",
-          "source_files": "RyKit/Classes/Base/UIKit/UIGestureRecognizer+YYAdd.{h, m}",
+          "source_files": "RyKit/Classes/Base/UIKit/UIGestureRecognizer+YYAdd.{h,m}",
           "public_header_files": "RyKit/Classes/Base/UIKit/UIGestureRecognizer+YYAdd.h",
           "dependencies": {
             "RyKit/Macro/YYKitMacro": [
@@ -278,7 +278,7 @@
         },
         {
           "name": "UIImageEX",
-          "source_files": "RyKit/Classes/Base/UIKit/UIImage+YYAdd.{h, m}",
+          "source_files": "RyKit/Classes/Base/UIKit/UIImage+YYAdd.{h,m}",
           "public_header_files": "RyKit/Classes/Base/UIKit/UIImage+YYAdd.h",
           "dependencies": {
             "RyKit/Macro/YYKitMacro": [
@@ -297,7 +297,7 @@
         },
         {
           "name": "UIScreenEX",
-          "source_files": "RyKit/Classes/Base/UIKit/UIScreen+YYAdd.{h, m}",
+          "source_files": "RyKit/Classes/Base/UIKit/UIScreen+YYAdd.{h,m}",
           "public_header_files": "RyKit/Classes/Base/UIKit/UIScreen+YYAdd.h",
           "dependencies": {
             "RyKit/Macro/YYKitMacro": [
@@ -310,7 +310,7 @@
         },
         {
           "name": "UIScrollViewEX",
-          "source_files": "RyKit/Classes/Base/UIKit/UIScrollView+YYAdd.{h, m}",
+          "source_files": "RyKit/Classes/Base/UIKit/UIScrollView+YYAdd.{h,m}",
           "public_header_files": "RyKit/Classes/Base/UIKit/UIScrollView+YYAdd.h",
           "dependencies": {
             "RyKit/Macro/YYKitMacro": [
@@ -320,7 +320,7 @@
         },
         {
           "name": "UITableViewEX",
-          "source_files": "RyKit/Classes/Base/UIKit/UITableView+YYAdd.{h, m}",
+          "source_files": "RyKit/Classes/Base/UIKit/UITableView+YYAdd.{h,m}",
           "public_header_files": "RyKit/Classes/Base/UIKit/UITableView+YYAdd.h",
           "dependencies": {
             "RyKit/Macro/YYKitMacro": [
@@ -330,7 +330,7 @@
         },
         {
           "name": "UITextFieldEX",
-          "source_files": "RyKit/Classes/Base/UIKit/UITextField+YYAdd.{h, m}",
+          "source_files": "RyKit/Classes/Base/UIKit/UITextField+YYAdd.{h,m}",
           "public_header_files": "RyKit/Classes/Base/UIKit/UITextField+YYAdd.h",
           "dependencies": {
             "RyKit/Macro/YYKitMacro": [
@@ -340,7 +340,7 @@
         },
         {
           "name": "UIViewEX",
-          "source_files": "RyKit/Classes/Base/UIKit/UIView+YYAdd.{h, m}",
+          "source_files": "RyKit/Classes/Base/UIKit/UIView+YYAdd.{h,m}",
           "public_header_files": "RyKit/Classes/Base/UIKit/UIView+YYAdd.h",
           "dependencies": {
             "RyKit/Macro/YYKitMacro": [
@@ -352,13 +352,31 @@
     },
     {
       "name": "Cache",
-      "source_files": "RyKit/Classes/Cache/**/*",
-      "public_header_files": "RyKit/Classes/Cache/**/*.h",
-      "dependencies": {
-        "RyKit/FoundationEX": [
+      "source_files": "RyKit/Classes/Cache/YYCache.{h,m}",
+      "public_header_files": "RyKit/Classes/Cache/YYCache.h",
+      "subspecs": [
+        {
+          "name": "Memory",
+          "source_files": "RyKit/Classes/Cache/YYMemoryCache.{h,m}",
+          "public_header_files": "RyKit/Classes/Cache/YYMemoryCache.h"
+        },
+        {
+          "name": "Disk",
+          "source_files": [
+            "RyKit/Classes/Cache/YYKVStorage.{h,m}",
+            "RyKit/Classes/Cache/YYDiskCache.{h,m}"
+          ],
+          "public_header_files": [
+            "RyKit/Classes/Cache/YYKVStorage.h",
+            "RyKit/Classes/Cache/YYDiskCache.h"
+          ],
+          "dependencies": {
+            "RyKit/UIKitEX/UIApplicationEX": [
 
-        ]
-      }
+            ]
+          }
+        }
+      ]
     },
     {
       "name": "Utility",

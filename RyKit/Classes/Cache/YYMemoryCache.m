@@ -15,10 +15,6 @@
 #import <QuartzCore/QuartzCore.h>
 #import <pthread.h>
 
-#if __has_include("YYDispatchQueuePool.h")
-#import "YYDispatchQueuePool.h"
-#endif
-
 #ifdef YYDispatchQueuePool_h
 static inline dispatch_queue_t YYMemoryCacheGetReleaseQueue() {
     return YYDispatchQueueGetForQOS(NSQualityOfServiceUtility);

@@ -12,8 +12,8 @@
 
 #import "YYKit.h"
 #import "YYCache.h"
-#import "YYDiskCache.h"
 #import "YYKVStorage.h"
+#import "YYDiskCache.h"
 #import "YYMemoryCache.h"
 #import "NSArray+YYAdd.h"
 #import "NSBundle+YYAdd.h"
