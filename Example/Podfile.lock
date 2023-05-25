@@ -45,6 +45,8 @@ PODS:
   - RyKit/FoundationEX/NSObjectEX (0.1.1):
     - RyKit/Macro/YYKitMacro
   - RyKit/FoundationEX/NSStringEX (0.1.1):
+    - RyKit/FoundationEX/NSDataEX
+    - RyKit/FoundationEX/NSNumberEX
     - RyKit/Macro/YYKitMacro
   - RyKit/FoundationEX/NSThreadEX (0.1.1)
   - RyKit/FoundationEX/NSTimerEX (0.1.1):
@@ -115,12 +117,16 @@ PODS:
   - RyKit/Utility (0.1.1):
     - RyKit/Utility/YYFileHash (= 0.1.1)
     - RyKit/Utility/YYGestureRecognizer (= 0.1.1)
+    - RyKit/Utility/YYKeychain (= 0.1.1)
     - RyKit/Utility/YYReachability (= 0.1.1)
     - RyKit/Utility/YYTimer (= 0.1.1)
     - RyKit/Utility/YYTransaction (= 0.1.1)
     - RyKit/Utility/YYWeakProxy (= 0.1.1)
   - RyKit/Utility/YYFileHash (0.1.1)
   - RyKit/Utility/YYGestureRecognizer (0.1.1):
+    - RyKit/Macro/YYKitMacro
+    - RyKit/UIKitEX/UIDeviceEX
+  - RyKit/Utility/YYKeychain (0.1.1):
     - RyKit/Macro/YYKitMacro
     - RyKit/UIKitEX/UIDeviceEX
   - RyKit/Utility/YYReachability (0.1.1)
@@ -136,7 +142,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  RyKit: b45caa931acd0e5c8cde31b789e7a3c4b8878a17
+  RyKit: 50fdefd2cbefabdb0040b792324d8879827834e7
 
 PODFILE CHECKSUM: dbf74daa73431e4bf7b24ba3d11bb5f975f8501d
 

@@ -10,7 +10,6 @@
 //
 
 #import "NSNumber+YYAdd.h"
-#import "NSString+YYAdd.h"
 #import "YYKitMacro.h"
 
 YYSYNTH_DUMMY_CLASS(NSNumber_YYAdd)
@@ -19,7 +18,7 @@ YYSYNTH_DUMMY_CLASS(NSNumber_YYAdd)
 @implementation NSNumber (YYAdd)
 
 + (NSNumber *)numberWithString:(NSString *)string {
-    NSString *str = [[string stringByTrim] lowercaseString];
+    NSString *str = [[string stringByTrimmingCharactersInSet:NSCharacterSet.whitespaceAndNewlineCharacterSet] lowercaseString];
     if (!str || !str.length) {
         return nil;
     }

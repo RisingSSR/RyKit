@@ -49,6 +49,7 @@
 #import "UIView+YYAdd.h"
 #import "YYFileHash.h"
 #import "YYGestureRecognizer.h"
+#import "YYKeychain.h"
 #import "YYReachability.h"
 #import "YYTimer.h"
 #import "YYTransaction.h"

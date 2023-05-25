@@ -142,6 +142,12 @@
           "dependencies": {
             "RyKit/Macro/YYKitMacro": [
 
+            ],
+            "RyKit/FoundationEX/NSDataEX": [
+
+            ],
+            "RyKit/FoundationEX/NSNumberEX": [
+
             ]
           }
         },
@@ -408,6 +414,19 @@
           "name": "YYTimer",
           "source_files": "RyKit/Classes/Utility/YYTimer.{h,m}",
           "public_header_files": "RyKit/Classes/Utility/YYTimer.h"
+        },
+        {
+          "name": "YYKeychain",
+          "source_files": "RyKit/Classes/Utility/YYKeychain.{h,m}",
+          "public_header_files": "RyKit/Classes/Utility/YYKeychain.h",
+          "dependencies": {
+            "RyKit/Macro/YYKitMacro": [
+
+            ],
+            "RyKit/UIKitEX/UIDeviceEX": [
+
+            ]
+          }
         },
         {
           "name": "YYTransaction",

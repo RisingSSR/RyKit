@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'RyKit'
-  s.version          = '0.1.1'
+  s.version          = '0.1.2'
   s.summary          = 'RyKit (魔改YYKit)'
 
   s.homepage         = 'https://github.com/RisingSSR/RyKit'
@@ -94,6 +94,8 @@ Pod::Spec.new do |s|
           sss.source_files = 'RyKit/Classes/Base/Foundation/NSString+YYAdd.{h,m}'
           sss.public_header_files = 'RyKit/Classes/Base/Foundation/NSString+YYAdd.h'
           sss.dependency 'RyKit/Macro/YYKitMacro'
+          sss.dependency 'RyKit/FoundationEX/NSDataEX'
+          sss.dependency 'RyKit/FoundationEX/NSNumberEX'
       end
       
       ss.subspec 'NSThreadEX' do |sss|
@@ -248,6 +250,13 @@ Pod::Spec.new do |s|
       ss.subspec 'YYTimer' do |sss|
           sss.source_files = 'RyKit/Classes/Utility/YYTimer.{h,m}'
           sss.public_header_files = 'RyKit/Classes/Utility/YYTimer.h'
+      end
+      
+      ss.subspec 'YYKeychain' do |sss|
+          sss.source_files = 'RyKit/Classes/Utility/YYKeychain.{h,m}'
+          sss.public_header_files = 'RyKit/Classes/Utility/YYKeychain.h'
+          sss.dependency 'RyKit/Macro/YYKitMacro'
+          sss.dependency 'RyKit/UIKitEX/UIDeviceEX'
       end
       
       ss.subspec 'YYTransaction' do |sss|
