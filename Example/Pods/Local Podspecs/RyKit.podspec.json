@@ -380,13 +380,46 @@
     },
     {
       "name": "Utility",
-      "source_files": "RyKit/Classes/Utility/**/*",
-      "public_header_files": "RyKit/Classes/Utility/**/*.h",
-      "dependencies": {
-        "RyKit/Macro": [
+      "subspecs": [
+        {
+          "name": "YYFileHash",
+          "source_files": "RyKit/Classes/Utility/YYFileHash.{h,m}",
+          "public_header_files": "RyKit/Classes/Utility/YYFileHash.h"
+        },
+        {
+          "name": "YYGestureRecognizer",
+          "source_files": "RyKit/Classes/Utility/YYGestureRecognizer.{h,m}",
+          "public_header_files": "RyKit/Classes/Utility/YYGestureRecognizer.h",
+          "dependencies": {
+            "RyKit/Macro/YYKitMacro": [
 
-        ]
-      }
+            ],
+            "RyKit/UIKitEX/UIDeviceEX": [
+
+            ]
+          }
+        },
+        {
+          "name": "YYReachability",
+          "source_files": "RyKit/Classes/Utility/YYReachability.{h,m}",
+          "public_header_files": "RyKit/Classes/Utility/YYReachability.h"
+        },
+        {
+          "name": "YYTimer",
+          "source_files": "RyKit/Classes/Utility/YYTimer.{h,m}",
+          "public_header_files": "RyKit/Classes/Utility/YYTimer.h"
+        },
+        {
+          "name": "YYTransaction",
+          "source_files": "RyKit/Classes/Utility/YYTransaction.{h,m}",
+          "public_header_files": "RyKit/Classes/Utility/YYTransaction.h"
+        },
+        {
+          "name": "YYWeakProxy",
+          "source_files": "RyKit/Classes/Utility/YYWeakProxy.{h,m}",
+          "public_header_files": "RyKit/Classes/Utility/YYWeakProxy.h"
+        }
+      ]
     }
   ]
 }

@@ -228,9 +228,37 @@ Pod::Spec.new do |s|
   end
   
   s.subspec 'Utility' do |ss|
-      ss.source_files = 'RyKit/Classes/Utility/**/*'
-      ss.public_header_files = 'RyKit/Classes/Utility/**/*.h'
-      ss.dependency 'RyKit/Macro'
+      ss.subspec 'YYFileHash' do |sss|
+          sss.source_files = 'RyKit/Classes/Utility/YYFileHash.{h,m}'
+          sss.public_header_files = 'RyKit/Classes/Utility/YYFileHash.h'
+      end
+      
+      ss.subspec 'YYGestureRecognizer' do |sss|
+          sss.source_files = 'RyKit/Classes/Utility/YYGestureRecognizer.{h,m}'
+          sss.public_header_files = 'RyKit/Classes/Utility/YYGestureRecognizer.h'
+          sss.dependency 'RyKit/Macro/YYKitMacro'
+          sss.dependency 'RyKit/UIKitEX/UIDeviceEX'
+      end
+      
+      ss.subspec 'YYReachability' do |sss|
+          sss.source_files = 'RyKit/Classes/Utility/YYReachability.{h,m}'
+          sss.public_header_files = 'RyKit/Classes/Utility/YYReachability.h'
+      end
+      
+      ss.subspec 'YYTimer' do |sss|
+          sss.source_files = 'RyKit/Classes/Utility/YYTimer.{h,m}'
+          sss.public_header_files = 'RyKit/Classes/Utility/YYTimer.h'
+      end
+      
+      ss.subspec 'YYTransaction' do |sss|
+          sss.source_files = 'RyKit/Classes/Utility/YYTransaction.{h,m}'
+          sss.public_header_files = 'RyKit/Classes/Utility/YYTransaction.h'
+      end
+      
+      ss.subspec 'YYWeakProxy' do |sss|
+          sss.source_files = 'RyKit/Classes/Utility/YYWeakProxy.{h,m}'
+          sss.public_header_files = 'RyKit/Classes/Utility/YYWeakProxy.h'
+      end
   end
 
   s.source_files = 'RyKit/Classes/YYKit.h'

@@ -10,6 +10,7 @@
 //
 
 #import "YYKeychain.h"
+#import "UIDevice+YYAdd.h"
 #import "YYKitMacro.h"
 #import <Security/Security.h>
 
@@ -166,12 +167,22 @@ static YYKeychainQuerySynchronizationMode YYKeychainQuerySynchonizationEnum(NSNu
     if (self.account) dic[(__bridge id)kSecAttrAccount] = self.account;
     if (self.service) dic[(__bridge id)kSecAttrService] = self.service;
     
-#if TARGET_OS_SIMULATOR
-#else
-    if (self.accessGroup) dic[(__bridge id)kSecAttrAccessGroup] = self.accessGroup;
-#endif
+    if (![UIDevice currentDevice].isSimulator) {
+        // Remove the access group if running on the iPhone simulator.
+        //
+        // Apps that are built for the simulator aren't signed, so there's no keychain access group
+        // for the simulator to check. This means that all apps can see all keychain items when run
+        // on the simulator.
+        //
+        // If a SecItem contains an access group attribute, SecItemAdd and SecItemUpdate on the
+        // simulator will return -25243 (errSecNoAccessForItem).
+        //
+        // The access group attribute will be included in items returned by SecItemCopyMatching,
+        // which is why we need to remove it before updating the item.
+        if (self.accessGroup) dic[(__bridge id)kSecAttrAccessGroup] = self.accessGroup;
+    }
     
-    if ([UIDevice currentDevice].systemVersion.doubleValue >= 7) {
+    if (kiOS7Later) {
         dic[(__bridge id)kSecAttrSynchronizable] = YYKeychainQuerySynchonizationID(self.synchronizable);
     }
     
@@ -187,19 +198,29 @@ static YYKeychainQuerySynchronizationMode YYKeychainQuerySynchonizationEnum(NSNu
     if (self.service) dic[(__bridge id)kSecAttrService] = self.service;
     if (self.label) dic[(__bridge id)kSecAttrLabel] = self.label;
     
-#if TARGET_OS_SIMULATOR
-#else
-    if (self.accessGroup) dic[(__bridge id)kSecAttrAccessGroup] = self.accessGroup;
-#endif
+    if (![UIDevice currentDevice].isSimulator) {
+        // Remove the access group if running on the iPhone simulator.
+        //
+        // Apps that are built for the simulator aren't signed, so there's no keychain access group
+        // for the simulator to check. This means that all apps can see all keychain items when run
+        // on the simulator.
+        //
+        // If a SecItem contains an access group attribute, SecItemAdd and SecItemUpdate on the
+        // simulator will return -25243 (errSecNoAccessForItem).
+        //
+        // The access group attribute will be included in items returned by SecItemCopyMatching,
+        // which is why we need to remove it before updating the item.
+        if (self.accessGroup) dic[(__bridge id)kSecAttrAccessGroup] = self.accessGroup;
+    }
     
-    if ([UIDevice currentDevice].systemVersion.doubleValue >= 7) {
+    if (kiOS7Later) {
         dic[(__bridge id)kSecAttrSynchronizable] = YYKeychainQuerySynchonizationID(self.synchronizable);
     }
     
     if (self.accessible) dic[(__bridge id)kSecAttrAccessible] = YYKeychainAccessibleStr(self.accessible);
     if (self.passwordData) dic[(__bridge id)kSecValueData] = self.passwordData;
-    if (self.type != nil) dic[(__bridge id)kSecAttrType] = self.type;
-    if (self.creater != nil) dic[(__bridge id)kSecAttrCreator] = self.creater;
+    if (self.type) dic[(__bridge id)kSecAttrType] = self.type;
+    if (self.creater) dic[(__bridge id)kSecAttrCreator] = self.creater;
     if (self.comment) dic[(__bridge id)kSecAttrComment] = self.comment;
     if (self.descr) dic[(__bridge id)kSecAttrDescription] = self.descr;
     
@@ -252,8 +273,8 @@ static YYKeychainQuerySynchronizationMode YYKeychainQuerySynchonizationEnum(NSNu
     if (self.account) [str appendFormat:@"  service:%@,\n", self.account];
     if (self.password) [str appendFormat:@"  service:%@,\n", self.password];
     if (self.label) [str appendFormat:@"  service:%@,\n", self.label];
-    if (self.type != nil) [str appendFormat:@"  service:%@,\n", self.type];
-    if (self.creater != nil) [str appendFormat:@"  service:%@,\n", self.creater];
+    if (self.type) [str appendFormat:@"  service:%@,\n", self.type];
+    if (self.creater) [str appendFormat:@"  service:%@,\n", self.creater];
     if (self.comment) [str appendFormat:@"  service:%@,\n", self.comment];
     if (self.descr) [str appendFormat:@"  service:%@,\n", self.descr];
     if (self.modificationDate) [str appendFormat:@"  service:%@,\n", self.modificationDate];
